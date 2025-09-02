@@ -100,7 +100,7 @@ jobs:
       # macOS 专门打 Intel x64 架构包
       - name: Build Intel x64 artifact on macOS
         if: runner.os == 'macOS'
-        run: npm run desktop:build:x64
+        run: npm run build:mac:x64
         env:
           APP_URL: http://localhost:3015
           DATABASE_URL: 'postgresql://postgres@localhost:5432/postgres'
